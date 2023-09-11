@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>História da VolTech - Sua Fonte de Componentes Eletrônicos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Red Hat Display', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  .header {
+    height: 100px;
+    width: 100%;
+    background-color: #211940;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .rodape {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: #211940;
+    color: #ffffff; 
+    font-family: 'Red Hat Display';
+    width: 100%;
+    height: 250px;
+    line-height: 100px;
+}
+  .container {
+    font-family: 'Red Hat Display';
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 100px;
+    margin-bottom: 170px;
+    z-index: -1 ;
+  }
+  
+  .story {
+    text-align: justify;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  .button-loja {
+    width: 100px;
+    height: 30px;
+    left: 470px;
+    position: absolute;
+    background-color:  #211940;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 10px;
+  }
+
+  .button-loja:hover {
+    background-color: #66F2BF; 
+  }
+  .button-quem {
+    width: 100px;
+    height: 30px;
+    left: 570px;
+    position: absolute;
+    background-color:  #66F2BF;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 10px;
+  }
+
+  .button-quem:hover {
+    background-color: #66F2BF; 
+  }
+  .button-contato {
+    width: 100px;
+    height: 30px;
+    left: 670px;
+    position: absolute;
+    background-color:  #211940;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 10px;
+  }
+
+  .button-contato:hover {
+    background-color: #66F2BF; 
+  }
+  .logo {
+    width: 80px; 
+    height: auto;
+    position: absolute;
+    top: 22px;
+    left: 230px;
+    
+  }
+  .car {
+    position: absolute;
+    top: 50px;
+    left: 1170px;
+    
+  }
+  .car img {
+    position: absolute;
+    top: 100;
+    left: 0;
+}
+
+.car span {
+    position: absolute;
+    top: 5px;
+    left: 30px; 
+    font-size: 10px; 
+    line-height: 1.1; 
+}
+.barra {
+    position: absolute;
+    top: 50px;
+    left: 1215px;
+}
+.barra span {
+    position: absolute;
+    top: 5px;
+    left: 32px; 
+    font-size: 20px; 
+    line-height: 1.1; 
+}
+.login {
+    position: absolute;
+    top: 48px;
+    left: 1250px;
+    
+  }
+  .login img {
+    position: absolute;
+    top: 100;
+    left: 0;
+}
+
+.login span {
+    position: absolute;
+    top: 7px;
+    left: 36px; 
+    font-size: 10px; 
+    line-height: 1.1; 
+}
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #66F2BF;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #66F2BF;
+  background: #66F2BF;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  left: 45%;
+  bottom: 0px;
+  transform: translate(-50%, -50%);
+}
+.titulo {
+  text-align: center;
+  font-size: 39px;
+  line-height: 35px;
+  color: #333;
+  
+}
+.subtitulo {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  position: absolute;
+  top: 105px;
+  left: 18%;
+}
+.texto1 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+}
+.texto2 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  position: absolute;
+  top: 260px;
+  left: 45%;
+}
+.texto2-titulo {
+  font-size: 24px;
+  line-height: 20px;
+  color: #333;
+
+}
+.rodape-txt1 {
+  position: absolute;
+  left: 450px;
+  width: 250px;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+  top:30px;
+  
+}
+.rodape-txt2 {
+  position: absolute;
+  left: 750px;
+  width: 250px;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+  top:30px;
+}
+.rodape-txt3 {
+  position: absolute;
+  left: 1050px;
+  width: 250px;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+  top:30px;
+}
+.rodape-txt4 {
+  position: absolute;
+  left: 1350px;
+  width: 250px;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+  top:30px;
+}
+.cor {
+  color:#66F2BF;
+}
+.copy {
+  position: absolute;
+  left: 43%;
+  bottom: 0;
+  font-size: 12px;
+  line-height: 10px;
+}
+
+  h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="header">
+    <div class="button-loja">
+      LOJA VIRTUAL
+    </div>
+    <div class="button-quem">
+      QUEM SOMOS
+    </div>
+    <div class="button-contato">
+      CONTATO
+    </div>
+    <div class="logo"> 
+      <img src="logo2.png" alt="Logo" class="logo"> 
+    </div>
+    <div class="search-bar"> 
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="Digite aqui o que você procura">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
+    </div>
+    <div class="car"> 
+      <img src="C:\Users\Filipe\Desktop\HTML\site-seminario\carro3.png" alt="compras"> 
+      <span>Meu<br> <strong>Carrinho</strong> </span>
+    </div>
+    <div class="barra">
+      <span> | </span>
+    </div>
+    <div class="login">
+      <img src="perfil10.png" alt="perfil">
+      <span>Entre ou <strong>Cadastre</strong></span>
+    </div>
+  </div>
+  <div class="container">
+    <div class="story">
+      <div class="titulo">
+        <p>OLÁ, <strong>NÓS SOMOS A VOLTECH</strong></p>
+      </div>
+        <div class="subtitulo">
+          <p>UMA LOJA VIRTUAL, DESENVOLVEDORA E FABRICANTE DE PLACAS E KITS NO BRASIL</p>
+        </div>
+      <div class="texto1">
+        <p>A VolTech foi fundada em 2010 com uma visão: fornecer aos entusiastas da eletrônica e profissionais da área o acesso a componentes eletrônicos de alta qualidade e confiabilidade.
+        Ao longo dos anos, construímos parcerias sólidas com fabricantes renomados e desenvolvemos uma ampla gama de produtos, desde resistores e capacitores até microcontroladores avançados e módulos de comunicação.
+        Nossa dedicação à qualidade, atendimento ao cliente e inovação nos permitiu crescer e nos tornar um destino confiável para soluções eletrônicas em todo o país.</p>
+     </div>
+    </div>
+    <div class="imagem3"> 
+      <img src="C:\Users\Filipe\Desktop\HTML\site-seminario\img4.avif" alt="compras">
+    </div>
+    <div class="texto2">
+      <div class="texto2-titulo"><p>NOSSA <strong>MISSÃO</strong> É</p></div>
+      <p> Facilitar a jornada de todos os apaixonados por eletrônica, desde estudantes e hobbistas até engenheiros e empresas, fornecendo componentes eletrônicos de alta qualidade a preços acessíveis.</p>
+      <p>Estamos comprometidos em oferecer uma experiência de compra excepcional, suporte técnico especializado e soluções personalizadas para atender às necessidades de cada cliente. Através da nossa ampla gama de produtos e da nossa dedicação à inovação, aspiramos a ser o parceiro confiável que ajuda você a transformar suas ideias em realidade.</p>
+    </div>
+    <div class="texto3">
+      <div class="texto2-titulo"><p>O <strong>FUTURO</strong></p></div>
+      <p>O futuro da VolTech é empolgante e promissor, pois continuaremos a liderar a indústria de componentes eletrônicos. Nossa paixão pela eletrônica nos motiva a expandir nossa linha de produtos, oferecendo uma seleção diversificada de componentes de alta qualidade que acompanham as últimas tendências tecnológicas. A evolução tecnológica é o cerne da nossa missão, e estaremos na vanguarda, proporcionando aos nossos clientes acesso aos componentes mais recentes e relevantes. Nosso compromisso central com a satisfação do cliente será aprimorado.</p>
+      <p>Estamos animados para desempenhar um papel crucial no avanço da eletrônica e apoiar projetos inovadores em todas as áreas, desde automação residencial até indústria 4.0.</p>
+    </div>
+  </div>
+  <footer class="rodape">
+    <div class="rodape-txt1"> 
+      <p><strong>VOLTECH TECNOLOGIA</strong></p>
+      <p> A VolTech foi criada em 2010 com o intuito de incentivar o desenvolvimento tecnologico, fabricando e fornecendo peças para automação e robótica de alta qualidade a preços acessíveis.</p> 
+      <p>Voltech Tecnologia LTDA <br>
+      CNPJ 10.383.409/0001-98 <br>
+      D-U-N-S Certified: 89-963-8833 <br>
+      Campos dos Goytacazes/RJ - Brasil</p> 
+    </div>
+    <div class="rodape-txt2"> 
+      <div>
+        <p><strong>LINKS ÚTEIS</strong></p>
+      </div>
+      <div class="cor">
+        <p>Quem somos <br>
+          Encontre uma loja perto de você<br>
+          Seja um distribuidor</p>
+      </div>
+      <div>
+        <p><strong>POLÍTICAS DA LOJA</strong></p>
+      </div>
+      <div class="cor">
+        <p>Política de Privacidade <br>
+          Política de Trocas e Devoluções <br>
+          Política de Frete</p>
+      </div>
+    </div>
+    <div class="rodape-txt3">
+      <p><strong>CENTRAL DE ATENDIMENTO</strong></p>
+      <p>Segunda à sexta das 8:00 às 17:00 <br>
+        (27) 3522-2222 <br>
+        vendas@voltech.net
+        <p><strong>NOSSAS REDES SOCIAIS</strong></p>
+        <img src="redes1.png" alt="payment">
+
+      </p>
+    </div>
+    <div class="rodape-txt4">
+      <p><strong>FORMAS DE PAGAMENTO</strong></p>
+      <img src="pay.png" alt="payment">
+      <p><strong>AUDITORIA DE SEGURANÇA</strong></p>
+      <img src="protect.png" alt="protect">
+    </div>
+    <div class="copy">
+      <p>&copy; 2023 VolTech. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
